@@ -1,0 +1,7 @@
+<div class="container">
+    <label for="ip">Введите свой Ip</label>
+    <input class="input" id="ip" type="text" placeholder="Введите свой Ip" autocomplete="on" [(ngModel)]="name" required>
+    <button class="button" (click)="sendIp()" [disabled]="!name">Отправить Ip</button>
+    <label for="info">Информация по заданному Ip:</label>
+    <div class="div" id="info">{{ data | json }}</div>
+</div>
